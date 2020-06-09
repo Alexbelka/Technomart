@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+<!--    <div class="container">-->
+    <div class="header-top">
+<div class="auto">
+    <a href="#" class="header-main__logo">Техномарт</a>
+    <form action="#" class="main-header__search">
+        <label>
+        <input class="input-search" type="text" placeholder="ПОИСК:">
+        </label>
+    </form>
+    <ul class="main-header__order">
+        <li class="main-header__item"><a href="#">Закладки:0</a></li>
+        <li class="main-header__item"><a href="#">Корзина:0</a></li>
+        <li class="main-header__item"><a href="#">Оформить заказ</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="header-info">
+        <p class="header-info__introduction">Интернет-магазин<br>
+        строительных материалов<br> и инструментов для ремонта</p>
+        <div class="header-info__contacts">
+            <p class="header-info__phoneNumber">
+                +7(812)555-05-55
+            </p>
+            <p class="header-info__adress">
+                г.Санкт-Петербург, ул.Б.Конюшенная, д 19.8
+            </p>
+        </div>
+        <ul class="header-info__menu">
+            <li class="header-info__item header-info__item--enter">Войти</li>
+            <li class="header-info__item header-info__item--register">Регистрация</li>
+        </ul>
+    </div>
+    <ul class="mail-menu">
+        <li class="main-menu__item"><a href="">Главная</a></li>
+        <li class="main-menu__item"><a href="">Компания</a></li>
+        <li class="main-menu__item"><a href="">Каталог</a></li>
+        <li class="main-menu__item"><a href="">Новости</a></li>
+        <li class="main-menu__item"><a href="">Спецпредложения</a></li>
+        <li class="main-menu__item"><a href="">Доставка</a></li>
+        <li class="main-menu__item"><a href="">Контакты</a></li>
+    </ul>
+<div class="helper"></div>
+<!--    </div>-->
+</header>
+<main class="main-page">
+<div class="container">
+    <section class="icons-range">
+        <div class="wrap">
+        <ul class="icons-menu">
+        <li class="icons-menu__item">
+            <h3>Материалы</h3>
+            <div class="icons-menu__wrapper">
+                <a href="#">на любой вкус</a>
+            </div>
+            <div class="icons-menu__equipment icons-menu__equipment--bucket">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="65" viewBox="0 0 44 65">
+                    <image id="icon-1" width="44" height="65" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAABBCAYAAACq7kaFAAAFQklEQVRoge2aW4hVZRTHf5+Nt1HHplEz72g3RSsMGsQL3SzpKazxIQItIh+MJvDFhwgfehiIAoNAIrKIekiIgpSCIkokDBy0C11HxGq8X2aK1FH7x4J1bM+evc/Z57LPmcg/nBnOPt+31n9/e31rrW+vFagQkkYCS/1zG3AjcB0wOSbxOHAY+AnYB+y2TwjhQqW6y4KkpZLekNSnytHnMpbmSXSZpN1VkEyDyVyWlUdJk5A0EdgCrE0Zcgb4DOgGvgYOAH/6b+OBucAtwGLgLuDqFDlvAp0hhL6s5JPILpD0c8LKXJS0XdIqSU1lyGvyOdtdRhyma0GlZNslnU4Q+rakuRUJHSx/rsuKw3S2lytsUcKmOiTpnmqJJui622VHYboXZRUwRdLBmIBdktpqTTais811RGEcpmSZvCM2caekUXmRjegd5bqi2FFq0rrYBHM5zXmTjehvTnCd69IGT5B0PDLwhKQZ9SIb4THDdRdgnCYkDdwcu7M19SYb4bImxmVz4bfgA+yx/wpc49d3hRBWZBRuG2MqMA0Y48Gi4JsvehA5B/QCR0IIxzLK/QJY7l9PATNDCH8VBD8SIWvYlCDAfO8dwK3AfOAmYB4wMguBiBxLenqAH4Hvgf3AVyGEA7GhmzxRwrkZx9cKQqIupduvzZP0pKR3Y7adF457BFwv6Xrn0B11rXYtSLJH+XvkzozwRF+9RsKeQp/nIAVMN5NYFSO1uMFEC0hasFUjgCWN4VMRlhjh8hKNxqLdbHig3J1eAubGLvmQq9zN1QoXjLDKFPY38IO5IuBb4BfgoJ/dToYQzkcHSxoNtPlZbw5gHmChu8ibgRHlKM9K+DTwHrAT+CSE0F+LFZPUAtwLPACsBlqzTCqGAUlP+CrlCtPhugaKEbKBHSUCwzFJXZKWlHMcKmOVm1x2l+tKg3HsKOQSZmPPAhtKbMCzwN5IWO112z3im+28j4liLDDaN99Ut+VpkfB+u49Jg4XyV4DnQwgn43c7S9JLkvrrEIpL4Q/nMitOcnrCYxonaa2kjyxZqSNJ0/Wx6x6XwGuy/Tkp6aEiNtYq6WFJWz0ZqeUNXHCZW11HqpeQNF9ST9StvQM8PcROhk4c4+/SFnq8t489tkluny2xKf1u5yeAQ57U9LgP3x9CiNt8XJ/ts/XAi0Bz3K0dlfRoMQH1ghGVtFLSnijBJD98ZhiQnSTpmyQbKiss1hHj3eSGoCGEq3nPUVfCklbbaykLMJIOS7q/EiF1sWF/s3Mmpuu3lLFz0vxgPVe42c+KUQwJWqUwXDddKqoiLGmFpA8l9frrpb2SNuT55CpOF42slwqi5Nr81H0t8FxtKA5GNSuxscj8zmqJpaEawrOL/NYiKa34UhUavukkJSXvqaaaRDj381sMSaltei0lxT/fUEqLpH1pzt0xyCTse8q4Pk/YJ/rBoSMhwFxGGuGuEmTHppTEKiFcFtJseKOk5Uk/+JwtRSqauSLNuO36p5JeBT7wE0OLnzQe8/8NQSWvqrKiNYRwOZFyEzldrdD/Vy7RCFwhnDeuEM4beRKOZ3MzayE0T8JvWUOIpNmS7gS21UKoBY69w6g2VwonjLDV6XZ5xWe44/ERIYQvgWf+A2S3hRD+NStJnZIu1SIFzAGvSxpqAZLu8yP7cMFZSU8VXXdPtF8uVX6qA963FojMBuMFmhcknaojyXPeRJrqtbL0XtqhdCXwoPdOVt0VGMNR4HM/KOwo1XtZdv+wV52stmY9klZrs55hu2a9P3Zz8Q6oQs9PoY+40Ev8ndc4rFadDcA/kIYDHhgtIIYAAAAASUVORK5CYII="/>
+                </svg>
+            </div>
+        </li>
+        <li class="icons-menu__item">
+            <h3>Инструмент</h3>
+            <div class="icons-menu__wrapper">
+            <a href="#">на все случаи</a>
+            </div>
+            <div class="icons-menu__equipment icons-menu__equipment--tool">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="61" viewBox="0 0 75 61">
+                    <image id="icon-2" width="75" height="61" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAA9CAYAAADlNZQ2AAADpUlEQVR4nO2c3UsUURjGn8ePghIT+iSTiiAKuo2IoBspKIToLqguooIuugmSIOhP6C9I+rjpvqJviAwi6yIqIqQysSwUoxJNzdQnDoyy2M7unjPjnBmdHyy7LjP7Pu+z75xz5pyzUtIBAFcBNMAvAjAM4CuAlwCeALhGcsyzrhmMWX0AVqdEz2wmAXQDuAzgIslxn2KMWfIpwAJj1E0AZ0n2+BCQJbOmMXqvADhF8u/Mm1IVgKXFTiA5FE/k/zkcywe7adldRE8YRwrOey9pQtJkyGNI0q6o+mqKvLdFkq/GfqXFsfUFrxsBVJc4ts50GMYwkh2u4rJ4GU5znKRp+E1lDYddgrP4BqCJ5JRLwGKVNZ9ZC2C/pHbbHE27t9DMMtxyOUlST1X8WuYt63OzLMjNsiA3q3KuL8QGvpnkI5cTs1xZdDinE8Bj14BZNmuZ5fHmRvyY64AUGR6Ufgdwv+DvH8EXX+zLN9M8XQBOknweJWjWbnf+AGgjedpH8JqgPBf5CG7BbwCXALSSnPAlwpRtm6/gJTDVbuagHgI4RLKO5BmfRiG4DE1VnQdwNJj2KNfLNJSZDinHDQBfCo4ZCZ6NQQNB+3K7cGIvLVh3v5Jqg3nxRoccpkhGMdor1kOH4Bv/6Ch6XFKLpGZJG9JrS3FcBnamuvoBrIoY2yw6bPa9YmODdWUFCwMrYohtxkpeG2xbXEbwm2Ia+b+NMpr2gUvSe2LS+clv6va4mNUSU+xnMX1OYriYtTUmcd0e8o2Ei1lRe0HDKIC+GPNIBCuzgsXXJTEI+0By2F/abthO0eyMEOsFgLvB63txJpEUtmbtiKDrAskH/lN2x7bNimLW57lIIElszdrmqM0MPvvTk7Ybtma59oRdJH/ORQJJUrFZkhojzKi+S13mDthUVpTNYG9iV+4BG7P2RpCXuQGoM5KWSxq12MI4m3ZJTnNnaaJsApKqgz1N+yLqNr3hnWB/ewfJzsy5VQpJByX1RqioUvyS9FRSq6Qo4ze/SNoo6fUcmRTGK0n1afal6GUoydzHbU9eDnpJNnmIWxFh94brguekp33XmHXMtC5ihFXWYk9L+mZNcpDkpIfYOXESVlm+fmEhkoOeYpclzCxf25DMancDyZEKjk2ctO38qw0eqSRtZslDD1wx+dZuC3KzLMjNsiA3y4LcLAtysyxIo1mp/QLTKCyVo3eUMGsgYR3TjKVxS/c0YWadC376kSTmf86cSDhm5QD4B30tWj0Sp+RcAAAAAElFTkSuQmCC"/>
+                </svg>
+            </div>
+        </li>
+            <li class="icons-menu__slyder">
+                <div class="slyder">
+                    <input class="visually-hidden" name="toggle" checked type="radio" id="btn-1">
+                    <input class="visually-hidden" name="toggle" type="radio" id="btn-2">
+                    <div class="slyder-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                    </div>
+                    <div class="slyder-inner">
+                        <div class="slyder-slydes">
+                            <div class="FirstSlide"></div>
+                            <div class="SecondSlide"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="icons-slyder">
+            <li class="icons-menu__item">
+                <h3>Техника</h3>
+                <div class="icons-menu__wrapper">
+                <a href="#">для стройки</a>
+                </div>
+                <div class="icons-menu__equipment icons-menu__equipment--technique">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="62" viewBox="0 0 78 62">
+                        <image id="icon-3" width="78" height="62" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                </div>
+            </li>
+        <li class="icons-menu__item">
+            <h3>Скидки</h3>
+            <div class="icons-menu__wrapper">
+            <a href="#">на 350 товаров</a>
+            </div>
+            <div class="icons-menu__equipment icons-menu__equipment--goods">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="72" viewBox="0 0 59 72">
+                    <image id="icon-4" width="59" height="72" xlink:href="data:img/png;base64,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"/>
+                </svg>
+            </div>
+        </li>
+        <li class="icons-menu__item">
+            <h3>Доставка</h3>
+            <div class="icons-menu__wrapper">
+            <a href="#">бесплатно</a>
+            </div>
+            <div class="icons-menu__equipment icons-menu__equipment--vehicle">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="63" viewBox="0 0 78 63">
+                    <image id="icon-5" width="78" height="63" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAA/CAYAAABO1P55AAAFJ0lEQVR4nO2cW6gVVRzGv/852kU9N7FCyC5muk2yxLCsDKKIhDTrIdNesqciSe0lIh86vhRUENGFCKSwSAqE8C2iXqQLYtFF6FRHEBE9CmpHS/LSFyvWHIbZa2atWbNmmL2dH2zO2Xv+a61vvjOzZl3++wgskBwA8B6ABwBcaovvQIZF5MW8sl2M2wpgXRcaFmeNiGzPU8DFuDEAl4dQV2NOA1gqIj+6SnQxjl1qVpLfACwWkVMuwT2VSqs3cwG84aqwueLaWSsiH9uCGuPaOQZggYgczgpqbtV2pgN4yxb0v3EknyS5nwaq110LHiZ5f5YQUaYBeKeLTnpIRE7YgkjuAnBHRsg+ADeIyD+mg+qKe76QzM5lq0X5bADr0w5KF3b+rlfcNACHAEzLCFP1zBaR48kD6oobLSy1A9ED3U8tygcBPGc6oIwbvhCN09huV8XTJAeTH/aIyDY1yQXwE4AzZSmsIyKyS0+1slC38obk8bYBMMkpqp/Ql+lQ7JV8P2SIm1IDf5z6uAiS6lZ82RJ2FMCs+BPWOnPIA8mLHAyPv78GwLUhNXgYNxPAAQC9ltDHReSD4vICQHKbadBdkLb+yAbJnQ5NflsHw2aoBdISTKOncQ851j2vHEeyxV1C8j6S75L8uyTTfI2brBZsHereEpUp1McpM/RTpw/AgP4ZvdTnqv+4Tq02ALgZwOQi7TmSq4+LnctrAJ61hI2KyBwkjSO5FsALelFvUvhzqgRf49Qf9xeH0JaIjEwsK5FcDeAjNbHtYNO8EZG9AL5zKL8cCYO6ZbI/UGD6/QmAWy0xarnp9YlbleQJ3U81ZDOuxqLxFeC9jWFO9AOYFzduM4BzNRZcJ5ZMGCciXwG4C8BnAH4FcFBflg3ttJzGcST7Y+Oz+O+DibFbdLzfMK7rsywadhLbg07yXSC5CMD3HW7cbtuKQFBITgXwIYCrq2y3BP6tZF+VZA/JlQBUUsuyqs+yBPpDr8fF+zL1U83rbgewCsBVdTnrAJx3SYHYnDAj6vzjn0WfXzA0uSOeNLkjnjTGedIY50ljnCeNcZ40xnnSGOdJWXsLatNjB4CvAYzodCno3fuWTuhbpXe/ymQ3gJ0AvtE5ItEy2QwA8/Uy2oMArg+uIeee5uckb8tR950kv/TbPs1kB8mbHDWoHMF71U59ngZCGXec5COuhhnaeIzkyQCGHSa53FODMvApkqddGnKp0MYoycKXOskWyQMFTPuZ5JUBdNxC8mjZxh0kOauo2Fhbc0ge8jBthORlAXXcSPLPsow7S3JJKLGx9paRPJfDtFMk55egY2VZxm2xlFtA8m2S+7TJZ0j+TvJNW9YPyVdzGLexgI65lrLvFzFu3FBuTGdtm+J7Sb5kuWrUsWHVIafUMagfODb+IGkcUgXSMTPlYfGXi3Gmx3RqwnXOvLfUL6aQfMWh/DMV6DDV84WLcWsMBVspsetyiI14NKWuhZZy50kav4BM8gkPHatT6rrHELvCapwuvCk2ztqfEtOrn7J5UX2PcepH8khGXXtSykwKqUPlNcdu13GdbO0OyYt135PWt93tITZiaUqdfbpN02tqCTqMsx61Ia//qcMEznNVnapu/EKYZrFrXQYW6flkss2THnUV1dGWJC0ibakgIVdHphcoG/KfJRTRcYVrYEjjjhUoe6QmOsZcA0MaZ+ysHfmhC3W4UcZT1VNH0KdqJYQcxxU0L9g4rkrzgozYu0WHMyHmiN2kw8dA79WRCnVkro6kAuA/ZVl8wIGfGM0AAAAASUVORK5CYII="/>
+                </svg>
+            </div>
+        </li>
+        </ul>
+        </div>
+        <div class="goods">
+            <p class="goods__text">Популярные товары</p>
+            <a class="reference-btn" href="#">все популярные товары</a>
+        </div>
+    </section>
+</div>
+    <div class="container">
+    <section class="goods-photo">
+        <ul class="goods-menu">
+            <li class="goods-menu__item">
+                <div class="goods-menu__FirstPicture"></div>
+                <div class="goods-menu__backside">
+                    <div class="goods-menu__buy">
+                        <button class="goods-menu__trigger" type="submit">купить</button>
+                        <button type="submit">в закладки</button>
+                    </div>
+                </div>
+                <p class="goods-menu__name">Перфоратор BOSCH BFG 9000</p>
+                <p class="goods-menu__crossPrice"><del>32500 р.</del></p>
+                <p class="goods-menu__price">25500 р.</p>
+            </li>
+            <li class="goods-menu__item">
+                <div class="goods-menu__SecondPicture"></div>
+                <div class="goods-menu__backside">
+                    <div class="goods-menu__buy">
+                        <button class="goods-menu__trigger" type="submit">купить</button>
+                        <button type="submit">в закладки</button>
+                    </div>
+                </div>
+                <p class="goods-menu__name">Перфоратор BOSCH BFG 3000</p>
+                <p class="goods-menu__crossPrice"><del>22500 р.</del></p>
+                <p class="goods-menu__price">15500 р.</p>
+            </li>
+            <li class="goods-menu__item">
+                <div class="goods-menu__ThirdPicture"></div>
+                <div class="goods-menu__backside">
+                    <div class="goods-menu__buy">
+                        <button class="goods-menu__trigger" type="submit">купить</button>
+                        <button type="submit">в закладки</button>
+                    </div>
+                </div>
+                <p class="goods-menu__name">Перфоратор BOSCH BFG 6000</p>
+                <p class="goods-menu__crossPrice"><del>30500 р.</del></p>
+                <p class="goods-menu__price">25500 р.</p>
+            </li>
+            <li class="goods-menu__item">
+                <div class="goods-menu__FourthPicture"></div>
+                <div class="goods-menu__backside goods-menu__backside--new">
+                    <div class="goods-menu__buy">
+                        <button class="goods-menu__trigger" type="submit">купить</button>
+                        <button type="submit">в закладки</button>
+                    </div>
+                </div>
+                <p class="goods-menu__name">Перфоратор BOSCH BFG 9000</p>
+                <p class="goods-menu__crossPrice"><del>22500 р.</del></p>
+                <p class="goods-menu__price">12500 р.</p>
+            </li>
+        </ul>
+        <div class="goods">
+            <p class="goods__text">Популярные производители</p>
+            <a class="reference-btn" href="#">все производители</a>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section class="labels">
+        <ul class="labels-menu">
+            <li class="labels-menu__item">
+            <div class="labels-wrapper">
+                <img class="picture" src="img/bosch.png" alt="">
+            </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/Makita.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/DeWALT.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/Интерскол.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/Hitachi.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/LG.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/AEG.png" alt="">
+                </div>
+            </li>
+            <li class="labels-menu__item">
+                <div>
+                    <img class="picture" src="img/Metabo.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+<!--    <div class="wrapper">-->
+<div class="container">
+    <section class="service">
+        <div class="service__text">
+        <h2 class="service__state">Сервисы</h2>
+        <p class="service__text">Хороший интернет-магазин отличается
+        от плохого не только ценами!<br>Мы стараемся изо всех сил,
+        чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div class="slide">
+            <input  id="btn-3" type="radio" name="change" class="visually-hidden">
+            <input  id="btn-4" type="radio" name="change" class="visually-hidden">
+            <input  id="btn-5" type="radio" name="change" class="visually-hidden">
+            <div class="slider-controls">
+                <label for="btn-3">Доставка</label>
+                <label for="btn-4">Гарантия</label>
+                <label for="btn-5">Кредит</label>
+            </div>
+            <div class="slider-inner">
+                <div class="slider-slides">
+                    <div class="slider-slides__item slider-slides__item--delivery">
+                        <h3>ДОСТАВКА</h3>
+                        <p>мы с удовольствием доставим ва товар прямо<br>
+                        к вашему подъезду совершенно бесплатно!<br>
+                            Ведь мы неплохо заработаем,<br>
+                        поднимая его на ваш этаж!</p>
+                    </div>
+                    <div class="slider-slides__item slider-slides__item--guarantee">
+                        <h3>ГАРАНТИЯ</h3>
+                        <p>Если купленный у нас товар поломается или заискрит,<br>
+                            а также в случае товара, спровоцированного его возгаранием,<br>
+                            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                            сгоревший товар на новый.<br>
+                            Дом уж восстановите как нибудь сами.<br>
+                        </p>
+                    </div>
+                    <div class="slider-slides__item slider-slides__item--credit">
+                        <h3>КРЕДИТ</h3>
+                        <p>Залезть в долговую яму стало проще!<br>
+                        Кредитные консультанты придут вам на помощь.
+                        </p>
+                        <a href="#">отправить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--    </div>-->
+<div class="container">
+    <section class="company">
+        <div class="company__Technomart">
+        <h2 class="company__name">Компания "Техномарт"</h2>
+        <p class="company__text">Настоящий мужской шоппинг начинается здесь!
+        Огромный выбор товаров для ремонта и строительства не оставит равнодушными
+        любителей сэкономить на гастарбайтерах.</p>
+        <p class="company__delivery">Мы можем доставить ваш товар в самые отдаленные точки
+        России! Техномарт работает с многими траспортными компаниями:</p>
+        <ul class="company__references">
+            <li class="company__items">Деловые линии</li>
+            <li class="company__items">Автотрейдинг</li>
+            <li class="company__items">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="reference-btn">подробнее о компании</a>
+        </div>
+        <div class="company__contact">
+        <h2 class="company__name">Контакты</h2>
+        <p class="company__text">Вы можете забрать товар сами,<br>
+        заехав в наш офис:
+        <div class="company__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac95e2864d423ec122462f1b79b97e46a65e99600ab681a6b177e3e7e0eda9aee&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+        </div>
+        <button class="reference-btn reference-btn--appear">заблудились?напишите нам!</button>
+        </div>
+    </section>
+</div>
+</main>
+    <footer class="main-footer">
+        <section class="main-footer__top">
+<!--            <div class="container">-->
+            <div class="pocket">
+                <a href="#" class="main-footer__reference">Техномарт</a>
+        <ul class="main-footer__menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Клиенты</a></li>
+        </ul>
+            </div>
+                <div class="pocket">
+                <p class="main-footer__text">
+            г.Санкт-Петербург, ул. Б. Конюшенная, д 19/8<br>
+            +7(812) 555-05-55
+         </p>
+                <ul class="main-footer__catalog">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+        </ul>
+                </div>
+<!--            </div>-->
+        </section>
+        <section class="main-footer__bottom ">
+<!--            <div class="container flex">-->
+            <div class="pocket">
+                <p class="main-footer__right">2010-2019 Компания "Техномарт"<br>
+            Все права защищены
+            </p>
+            <ul class="main-footer__networks">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="15" viewBox="0 0 26 15">
+                            <image id="vk-icon" width="26" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAYAAAD6Ud/mAAABVUlEQVQ4ja2TvyuFURjHv0fdRUpKSemWgVmJsvgRSspwZ4OU5ZbJZDJbbIoNg/0qfwAWGZTJYLEhgxC3ri4fnTo3x3vf532j+9Rbb+f7Pc/nec5zjgNmJPXpJ2qSjpxzVb8CDErakzQiqRBcdUkXkuadc6+NnYCTNC2pI8rXLunBi+80x060uRPYSPH4GI8Sem/J8H14cTtF8PDuuFLgMcU3mQCdGqBDLxY9MUXcTCS5ygL5fwNSBfobpl2jq2IOaDhobcC5ASrH1VpdVSLPdYo+FLRVA1IJF+TX0WxZFQEF4C1FW/BdheNJxi3QpWT4RWPgn8ClUcSdcWu/gLEmSNTVkpHwr3FjQqJrfNwi2EoerAe4bxGsnAcbNQacjCfgIMzx351NAS85oPXgXczw1IGJPNgAcJaRZC7yrmX4si9HlGQW2A+P9jl8/p30JnzLKfOtASfftOU4d1+72qoAAAAASUVORK5CYII="/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
+                            <image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMAxFX0V3vYFH8Po9lbg4dPBLQUFiiggKDr4tzX9NaPGQNEiKkpIMp/gWnm1wxxNiKZwJjpCAxt0VCCac68VkemAqXYCzRXvsV0WzwG0hyHuqJye8L9RAZ85GU3/9H37hEmAFZHqOnjrsE+cAAAAASUVORK5CYII="/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+                            <image id="insta-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA8ElEQVQ4jcWVQQ6CQAxFW2OIYYUn0JVH0CtwSXaEA7CASxmQFa78ZpKSlGYGUDD+zUw7nTeldIAAxAAyAD3WqRdOTDLZUhm7E4joQNvp6aD4Encmok7Z7TDZr8ivY+bHYOjcdiugQf0NWhPRjYiOMtbib3XHjHbMtFIFgE08iz8oCz0BuCv76kvd+VWMi09GWRtoYu0A1MbtRoZnT6vml0Cdtb9l5tdUTV0G5Yc1LS3HB02Nr5IaJjLal5TOQiUgxzLlvicOQaMFYLceLYaqwFRq3Mh6I3bq6YhlULNp8vZpyE++p+70YkOgU7H9PwqI35K/QSTQVoILAAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="main-footer__callback">
+                Обратная связь:<br>
+                <a href="#">mail@htmlaademy.ru</a>
+            </p>
+            <p class="main-footer__developing">
+                Разработано:<br>
+                <a href="#">htmlacademy.ru</a>
+            </p>
+            </div>
+<!--            </div>-->
+        </section>
+    </footer>
+<section class="popup-request">
+<div class="popup-request__wrapper">
+    <div class="popup-request__top"></div>
+    <div class="popup-request__bottom"></div>
+    <button class="popup-request__btn"></button>
+    <form action="" class="popup-form">
+        <div class="popup-form__container">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="popup-form__container">
+            <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="text" placeholder="Ваш e-mail">
+        </div>
+        <div class="popup-form__area">
+            <label for="letter">Текст письма:</label>
+            <textarea placeholder="В свободной форме" name="" id="letter" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="ОТПРАВИТЬ" class="popup-form__submit">
+    </form>
+</div>
+</section>
+<section class="popup">
+    <div class="popup__top"></div>
+    <button class="popup__close"></button>
+    <p class="popup__add">Товар добавлен в корзину!</p>
+    <ul class="popup__menu">
+        <li class="popup__menuItem"><a href="#">оформить заказ</a></li>
+        <li class="popup__menuItem"><a href="#">продолжить покупки</a></li>
+    </ul>
+</section>
+<script src="js/appear.js"></script>
+</body>
+</html>
