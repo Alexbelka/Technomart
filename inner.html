@@ -10,22 +10,23 @@
 </head>
 <body class="inner-page">
 <header class="main-header">
-    <!--    <div class="container">-->
-    <div class="header-top">
-        <div class="auto">
-            <a href="#" class="header-main__logo">Техномарт</a>
-            <form action="#" class="main-header__search">
-                <label>
-                    <input type="text" placeholder="Поиск:">
-                </label>
-            </form>
-            <ul class="main-header__order">
-                <li class="main-header__item">Закладки:0</li>
-                <li class="main-header__item">Корзина:0</li>
-                <li class="main-header__item"><a href="">Оформить заказ</a></li>
-            </ul>
-        </div>
-    </div>
+    <nav class="header-navigation">
+        <form action="" class="header-form">
+            <a href="http://localhost:3000" class="header-form__ref">
+                техномарт
+            </a>
+            <label>
+                <input class="header-form__search" placeholder="Перфоратор" type="text">
+            </label>
+            <p class="header-form__option marks">
+                Закладки:<span class="marks__variable">0</span>
+            </p>
+            <p class="header-form__option basket">
+                Корзина:<span class="basket__variable">0</span>
+            </p>
+            <input type="submit" value="Оформить заказ" class="header-form__submit">
+        </form>
+    </nav>
     <div class="header-info">
         <p class="header-info__introduction">Интернет-магазин<br>
             строительных материалов<br> и инструментов для ремонта</p>
@@ -37,10 +38,13 @@
                 г.Санкт-Петербург, ул.Б.Конюшенная, д 19.8
             </p>
         </div>
-        <ul class="header-info__menu">
-            <li class="header-info__item">Войти</li>
-            <li class="header-info__item">Регистрация</li>
-        </ul>
+       <div class="personal-data">
+           <h2 class="personal-data__name">Равшан Джамшутович</h2>
+           <ul class="personal-data__menu">
+               <li class="personal-data__menu-item">Мои заказы</li>
+               <li class="personal-data__menu-item">Личный кабинет</li>
+           </ul>
+       </div>
     </div>
     <ul class="mail-menu">
         <li class="main-menu__item"><a href="#">Главная</a></li>
@@ -52,7 +56,6 @@
         <li class="main-menu__item"><a href="">Контакты</a></li>
     </ul>
     <div class="helper"></div>
-    <!--    </div>-->
 </header>
 <main>
     <section class="references">
@@ -75,11 +78,12 @@
                 <input id="range" type="range" class="runner">
                 </div>
 <!--                <span class="aside-form__span">от</span>-->
+                <div class="text-wrapper">
                 <p class="aside-form__text">0</p>
                 <p class="aside-form__punkt" >-</p>
 <!--                <span class="aside-form__span">до</span>-->
                 <p class="aside-form__text">15 000</p>
-
+                </div>
         <fieldset class="side-content__features">
             <legend>Производители:</legend>
             <div  class="side-filter__creators">
