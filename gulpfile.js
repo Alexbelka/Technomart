@@ -26,4 +26,5 @@ function Server(){
 }
 
 
+exports.build = series(Sass);
 exports.start = series(Sass,Server);
